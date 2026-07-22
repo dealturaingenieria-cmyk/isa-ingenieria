@@ -1,0 +1,341 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #004080 0%, #003366 100%);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  max-width: 120px;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+/* Navegación */
+nav {
+  background: #333;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 1em;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+}
+
+/* Secciones generales */
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+section h2 {
+  color: #004080;
+  margin-bottom: 30px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin: 12px 0;
+  font-size: 1.05em;
+}
+
+/* Sección de Servicios */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.servicio-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 64, 128, 0.2);
+}
+
+.servicio-card h3 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.servicio-card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Sección de Certificaciones */
+.certificaciones-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.normas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.norma {
+  background: #004080;
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Galería de proyectos */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.proyecto {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+  transform: scale(1.05);
+}
+
+.proyecto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.proyecto p {
+  padding: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.proyectos-desc {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #004080;
+}
+
+/* Testimonios */
+.testimonios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonio {
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%);
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 5px solid #004080;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.testimonio footer {
+  font-style: normal;
+  color: #004080;
+  font-weight: bold;
+}
+
+/* Sección de Contacto */
+.contacto-section {
+  background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacto-info {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-info h3 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.contacto-info p {
+  font-size: 1.1em;
+}
+
+.contacto-info a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contacto-info a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #004080 0%, #003366 100%);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 0.95em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  section h2 {
+    font-size: 1.6em;
+  }
+
+  .servicios-grid,
+  .galeria,
+  .testimonios-container,
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .normas {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+  }
+
+  .servicio-card,
+  .testimonio,
+  .contacto-info {
+    padding: 20px;
+  }
+}
